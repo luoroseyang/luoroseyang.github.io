@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Array | Yang_Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="concat   方法:返回一个新数组，这个新数组是由两个或更多数组组合而成的。array1.concat([item1[,   item2[,   .   .   .   [,   itemN]]]])
+join   方法   :返回字符串值，其中包含了连接到一起的数组的所有元素，元素由指定的分隔符分隔开来。arrayObj.join(separator) 与C#不同的是这里是直接通过数组调用出">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Array">
+<meta property="og:url" content="http://yoursite.com/2015/09/10/Array/index.html">
+<meta property="og:site_name" content="Yang_Blog">
+<meta property="og:description" content="concat   方法:返回一个新数组，这个新数组是由两个或更多数组组合而成的。array1.concat([item1[,   item2[,   .   .   .   [,   itemN]]]])
+join   方法   :返回字符串值，其中包含了连接到一起的数组的所有元素，元素由指定的分隔符分隔开来。arrayObj.join(separator) 与C#不同的是这里是直接通过数组调用出">
+<meta property="og:updated_time" content="2015-09-11T05:47:25.361Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Array">
+<meta name="twitter:description" content="concat   方法:返回一个新数组，这个新数组是由两个或更多数组组合而成的。array1.concat([item1[,   item2[,   .   .   .   [,   itemN]]]])
+join   方法   :返回字符串值，其中包含了连接到一起的数组的所有元素，元素由指定的分隔符分隔开来。arrayObj.join(separator) 与C#不同的是这里是直接通过数组调用出">
+  
+    <link rel="alternative" href="/atom.xml" title="Yang_Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/img/touxiang.png" class="js-avatar">
+			<script>
+				console.log("/img/touxiang.png");
+			</script>
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">luoroseyang</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">LuoRoseYang</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/tags">随笔</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="/#" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+					        
+								<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						
+					</div>
+				</section>
+				
+				
+				
+
+				
+				
+				<section class="switch-part switch-part3">
+				
+					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">luoroseyang</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="/img/touxiang.png" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">luoroseyang</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">LuoRoseYang</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+					<li><a href="/tags">随笔</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="/#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-Array" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/09/10/Array/" class="article-date">
+  	<time datetime="2015-09-10T02:33:06.000Z" itemprop="datePublished">2015-09-10</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Array
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>concat   方法:返回一个新数组，这个新数组是由两个或更多数组组合而成的。array1.concat([item1[,   item2[,   .   .   .   [,   itemN]]]])</p>
+<p>join   方法   :返回字符串值，其中包含了连接到一起的数组的所有元素，元素由指定的分隔符分隔开来。arrayObj.join(separator) 与C#不同的是这里是直接通过数组调用出来返回给一个字符串.</p>
+<a id="more"></a>
+<p>split  方法  :返回数组 基本和C#一样  var s=”1_2<em>3”; var ary=s.split(“</em>“); 参数是字符串而不是字符</p>
+<p>pop   方法   :移除数组中的最后一个元素并返回该元素。arrayObj.pop()</p>
+<p>push   方法   :将新元素添加到一个数组中，并返回数组的新长度值。arrayObj.push([item1   [item2   [.   .   .   [itemN   ]]]])</p>
+<p>reverse   方法   :返回一个元素顺序被反转的   Array   对象。arrayObj.reverse(   ) 注意这里是返回一个</p>
+<pre><code>原来的数组而不是创建了一个新的数组.
+</code></pre><p>shift   方法   :移除数组中的第一个元素并返回该元素。arrayObj.shift(   )</p>
+<p>slice   方法   :返回一个数组的一段。arrayObj.slice(start,   [end])  </p>
+<p>sort   方法   :返回一个元素已经进行了排序的   Array   对象。arrayobj.sort(sortfunction)  </p>
+<pre><code>如果 sort()里面没有参数那么将按照字母顺序排列
+
+如果要用从大到小顺序排列里面需要带参数sort(<span class="function"><span class="keyword">function</span><span class="params">(a,b)</span></span>{<span class="keyword">return</span> b-a});
+</code></pre><p>splice   方法   :从一个数组中移除一个或多个元素，如果必要，在所移除元素的位置上插入新元素，返回所移除的元素。arrayObj.splice(start,   deleteCount,   [item1[,   item2[,   .   .   .   [,itemN]]]])</p>
+<p>unshift   方法   :将指定的元素插入数组开始位置并返回该数组。arrayObj.unshift([item1[,   item2   [,   .   .   .   [,   itemN]]]]) 在IE下无效,返回undefined fox下可以</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/09/10/兼容性/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          兼容性
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/09/10/图片居中/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">图片居中</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="Array" data-title="Array" data-url="http://yoursite.com/2015/09/10/Array/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 luoroseyang
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>DNS解析 | Yang_Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="用户在浏览器的地址栏中敲入了网站的网址 ，会发生哪些事情呢？
+用户在浏览器的地址栏中敲入了网站的网址
+浏览器查找域名的IP地址
+找到ip地址后，浏览器给web服务器发送一个HTTP请求
+服务器“处理”请求
+服务器发回一个HTML响应
+浏览器开始显示HTML">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DNS解析">
+<meta property="og:url" content="http://yoursite.com/2015/09/09/DNS解析/index.html">
+<meta property="og:site_name" content="Yang_Blog">
+<meta property="og:description" content="用户在浏览器的地址栏中敲入了网站的网址 ，会发生哪些事情呢？
+用户在浏览器的地址栏中敲入了网站的网址
+浏览器查找域名的IP地址
+找到ip地址后，浏览器给web服务器发送一个HTTP请求
+服务器“处理”请求
+服务器发回一个HTML响应
+浏览器开始显示HTML">
+<meta property="og:updated_time" content="2015-09-11T05:46:04.367Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="DNS解析">
+<meta name="twitter:description" content="用户在浏览器的地址栏中敲入了网站的网址 ，会发生哪些事情呢？
+用户在浏览器的地址栏中敲入了网站的网址
+浏览器查找域名的IP地址
+找到ip地址后，浏览器给web服务器发送一个HTTP请求
+服务器“处理”请求
+服务器发回一个HTML响应
+浏览器开始显示HTML">
+  
+    <link rel="alternative" href="/atom.xml" title="Yang_Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/img/touxiang.png" class="js-avatar">
+			<script>
+				console.log("/img/touxiang.png");
+			</script>
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">luoroseyang</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">LuoRoseYang</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/tags">随笔</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="/#" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+					        
+								<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						
+					</div>
+				</section>
+				
+				
+				
+
+				
+				
+				<section class="switch-part switch-part3">
+				
+					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">luoroseyang</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="/img/touxiang.png" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">luoroseyang</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">LuoRoseYang</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+					<li><a href="/tags">随笔</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="/#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-DNS解析" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/09/09/DNS解析/" class="article-date">
+  	<time datetime="2015-09-09T06:42:25.000Z" itemprop="datePublished">2015-09-09</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      DNS解析
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="用户在浏览器的地址栏中敲入了网站的网址_，会发生哪些事情呢？">用户在浏览器的地址栏中敲入了网站的网址 ，会发生哪些事情呢？</h2><ul>
+<li>用户在浏览器的地址栏中敲入了网站的网址</li>
+<li>浏览器查找域名的IP地址</li>
+<li>找到ip地址后，浏览器给web服务器发送一个HTTP请求</li>
+<li>服务器“处理”请求</li>
+<li>服务器发回一个HTML响应</li>
+<li>浏览器开始显示HTML<a id="more"></a>
+<h3 id="大概就是这样的过程，下面我们来仔细的分析下浏览器是如何查找到域名对应的ip地址的。">大概就是这样的过程，下面我们来仔细的分析下浏览器是如何查找到域名对应的ip地址的。</h3><h2 id="DNS域名解析过程">DNS域名解析过程</h2></li>
+<li>第1步，<strong>查找浏览器缓存</strong>。<br>浏览器会检查缓存中有没有这个域名对应的解析过的IP地址，如果缓存中有，这个解析过程就将结束。浏览器缓存域名也是有限制的，不仅浏览器缓存大小有限制，而且缓存的时间也有限制，通常情况下为几分钟到几小时不等。这个缓存时间太长和太短都不好，如果缓存时间太长，一旦域名被解析到的IP有变化，会导致被客户端缓存的域名无法解析到变化后的IP地址，以致该域名不能正常解析，这段时间内有可能会有一部分用户无法访问网站。如果时间设置太短，会导致用户每次访问网站都要重新解析一次域名。</li>
+<li>第2步，<strong>查找系统缓存</strong>。<br>如果用户的浏览器缓存中没有，浏览器会查找操作系统缓存中是否有这个域名对应的DNS解析结果。其实操作系统也会有一个域名解析的过程，在Windows中可以通过C:\Windows\System32\drivers\etc\hosts文件来设置，你可以将任何域名解析到任何能够访问的IP地址。如果你在这里指定了一个域名对应的IP地址，那么浏览器会首先使用这个IP地址。例如，我们在测试时可以将一个域名解析到一台测试服务器上，这样不用修改任何代码就能测试到单独服务器上的代码的业务逻辑是否正确。正是因为有这种本地DNS解析的规程，所以黑客就有可能通过修改你的域名解析来把特定的域名解析到它指定的IP地址上，导致这些域名被劫持。</li>
+<li>第3步，<strong>查找路由器缓存</strong>。<br>如果系统缓存中也找不到，那么查询请求就会发向路由器，它一般会有自己的DNS缓存。</li>
+<li>第4步，<strong>查找ISP DNS 缓存</strong>。<br>运气实在不好，就只能查询ISP DNS 缓存服务器了。在我们的网络配置中都会有”DNS服务器地址”这一项，操作系统会把这个域名发送给这里设置的DNS，也就是本地区的域名服务器，通常是提供给你接入互联网的应用提供商。这个专门的域名解析服务器性能都会很好，它们一般都会缓存域名解析结果，当然缓存时间是受域名的失效时间控制的，一般缓存空间不是影响域名失效的主要因素。大约80%的域名解析都到这里就已经完成了，所以ISP DNS主要承担了域名的解析工作。</li>
+<li>第5步，<strong>递归搜索</strong>。<br>最无奈的情况发生了, 在前面都没有办法命中的DNS缓存的情况下,<br>(1)本地DNS服务器即将该请求转发到互联网上的根域 （即一个完整域名最后面的那个点，通常省略不写）。<br>(2)根域将所要查询域名中的顶级域（假设要查询ke.qq.com，该域名的顶级域就是com） 的服务器IP地址返回到本地DNS。<br>(3) 本地DNS根据返回的IP地址，再向顶级域（就是com域）发送请求。<br>(4) com域服务器再将域名中的二级域（即ke.qq.com中的qq）的IP地址返回给本地DNS。<br>(5) 本地DNS再向二级域发送请求进行查询。<br>(6) 之后不断重复这样的过程，直到本地DNS服务器得到最终的查询结果，并返回到主机。这时候主机才能通过域名访问该网站。</li>
+</ul>
+<h2 id="DNS有关的安全问题">DNS有关的安全问题</h2><p>1、<strong>DNS欺骗</strong><br>DNS欺骗即域名信息欺骗是最常见的DNS安全问题。当一个DNS服务器掉入陷阱，使用了来自一个恶意DNS服务器的错误信息，那么该DNS服务器就被欺骗了。DNS欺骗会使那些易受攻击的DNS服务器产生许多安全问题，例如：将用户引导到错误的互联网站点，或者发送一个电子邮件到一个未经授权的邮件服务器。网络攻击者通常通过两种方法进行DNS欺骗。</p>
+<ul>
+<li>缓存感染：黑客会熟练的使用DNS请求，将数据放入一个没有设防的DNS服务器的缓存当中。这些缓存信息会在客户进行DNS访问时返回给客户，从而将客户引导到入侵者所设置的运行木马的Web服务器或邮件服务器上，然后黑客从这些服务器上获取用户信息。</li>
+<li>DNS信息劫持：入侵者通过监听客户端和DNS服务器的对话，通过猜测服务器响应给客户端的DNS查询ID。每个DNS报文包括一个相关联的16位ID号，DNS服务器根据这个ID号获取请求源位置。黑客在DNS服务器之前将虚假的响应交给用户，从而欺骗客户端去访问恶意的网站。</li>
+<li>DNS重定向：攻击者能够将DNS名称查询重定向到恶意DNS服务器。这样攻击者可以获得DNS服务器的写权限</li>
+</ul>
+<p>2、<strong>拒绝服务攻击</strong> 　　<br>黑客主要利用一些DNS软件的漏洞，如在BIND 9版本（版本9.2.0以前的 9系列）如果有人向运行BIND的设备发送特定的DNS数据包请求，BIND就会自动关闭。攻击者只能使BIND关闭，而无法在服务器上执行任意命令。如果得不到DNS服务，那么就会产生一场灾难：由于网址不能解析为IP地址，用户将无方访问互联网。这样，DNS产生的问题就好像是互联网本身所产生的问题，这将导致大量的混乱。</p>
+<p>3、<strong>分布式拒绝服务攻击</strong> 　　<br>DDOS 攻击通过使用攻击者控制的几十台或几百台计算机攻击一台主机，使得服务拒绝攻击更难以防范，更难以通过阻塞单一攻击源主机的数据流，来防范服务拒绝攻击。</p>
+<p>4、<strong>缓冲区漏洞溢出攻击</strong> 　　<br>黑客利用DNS服务器软件存在漏洞，比如对特定的输入没有进行严格检查，那幺有可能被攻击者利用，攻击者构造特殊的畸形数据包来对DNS服务器进行缓冲区溢出攻击。如果这一攻击成功，就会造成DNS服务停止，或者攻击者能够在DNS服务器上执行其设定的任意代码。</p>
+<h2 id="DNS有关的网络性能优化">DNS有关的网络性能优化</h2><p>1、减少DNS查找，避免重定向 　　浏览器DNS缓存 、计算机DNS缓存、 服务器DNS缓存、使用Keep-Alive特性 来减少DNS查找。考虑影响DNS缓存的因素：</p>
+<ul>
+<li>服务器可以设置TTL值表示DNS记录的存活时间。本机DNS缓存将根据这个TTL值判断DNS记录什么时候被抛弃，这个TTL值一般都不会设置很大，主要是考虑到快速故障转移的问题。<br>浏览器DNS缓存也有自己的过期时间，这个时间是独立于本机DNS缓存的，相对也比较短，例如chrome只有1分钟左右。</li>
+<li>浏览器DNS记录的数量也有限制，如果短时间内访问了大量不同域名的网站，则较早的DNS记录将被抛弃，必须重新查找。不过即使浏览器丢弃了DNS记录，操作系统的DNS缓存也有很大机率保留着该记录，这样可以避免通过网络查询而带来的延迟。</li>
+</ul>
+<p>2、DNS的预解析<br>可以通过用meta信息来告知浏览器, 我这页面要做DNS预解析<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">meta</span> <span class="attribute">http-equiv</span>=<span class="value">"x-dns-prefetch-control"</span> <span class="attribute">content</span>=<span class="value">"on"</span> /&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>可以使用link标签来强制对DNS做预解析:<br><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="title">link</span> <span class="attribute">rel</span>=<span class="value">"dns-prefetch"</span> <span class="attribute">href</span>=<span class="value">"http://ke.qq.com/"</span> /&gt;</span></span><br></pre></td></tr></table></figure></p>
+<p>当客户端的DNS缓存为空时，DNS查找的数量与Web页面中唯一主机名的数量相等。减少唯一主机名的数量就可以减少DNS查找的数量。较少的域名来减少DNS查找（2-4个主机）<br>本文是前端与计算机网络培训的一点总结，关于DNS解析过程做了简短的介绍，相关的安全防范和网络性能优化，还需要更多的学习。</p>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/09/10/iframe跨域/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          iframe跨域
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2015/09/09/基本知识/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">基本知识</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="DNS解析" data-title="DNS解析" data-url="http://yoursite.com/2015/09/09/DNS解析/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 luoroseyang
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>

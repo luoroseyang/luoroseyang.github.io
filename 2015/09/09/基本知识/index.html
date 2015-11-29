@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>基本知识 | Yang_Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="前端开发面试知识点大纲：HTML&amp;amp;CSS：对Web标准的理解、浏览器内核差异、兼容性、hack、HTML5CSS基本功：布局、盒子模型、选择器优先级及使用、CSS3、移动端适应 
+JavaScript：数据类型、面向对象、继承、闭包、插件、作用域、跨域、原型链、模块化、自定义事件、内存泄漏、事件机制、异步装载回调、模板引擎、Nodejs、JSON、ajax等。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="基本知识">
+<meta property="og:url" content="http://yoursite.com/2015/09/09/基本知识/index.html">
+<meta property="og:site_name" content="Yang_Blog">
+<meta property="og:description" content="前端开发面试知识点大纲：HTML&amp;amp;CSS：对Web标准的理解、浏览器内核差异、兼容性、hack、HTML5CSS基本功：布局、盒子模型、选择器优先级及使用、CSS3、移动端适应 
+JavaScript：数据类型、面向对象、继承、闭包、插件、作用域、跨域、原型链、模块化、自定义事件、内存泄漏、事件机制、异步装载回调、模板引擎、Nodejs、JSON、ajax等。">
+<meta property="og:updated_time" content="2015-09-11T05:45:46.119Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="基本知识">
+<meta name="twitter:description" content="前端开发面试知识点大纲：HTML&amp;amp;CSS：对Web标准的理解、浏览器内核差异、兼容性、hack、HTML5CSS基本功：布局、盒子模型、选择器优先级及使用、CSS3、移动端适应 
+JavaScript：数据类型、面向对象、继承、闭包、插件、作用域、跨域、原型链、模块化、自定义事件、内存泄漏、事件机制、异步装载回调、模板引擎、Nodejs、JSON、ajax等。">
+  
+    <link rel="alternative" href="/atom.xml" title="Yang_Blog" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+</head>
+<body>
+  <div id="container">
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="/img/touxiang.png" class="js-avatar">
+			<script>
+				console.log("/img/touxiang.png");
+			</script>
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">luoroseyang</a></h1>
+		</hgroup>
+
+		
+		<p class="header-subtitle">LuoRoseYang</p>
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						
+						<div class="icon-wrap icon-me hide" data-idx="3">
+							<div class="user"></div>
+							<div class="shoulder"></div>
+						</div>
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						
+						<li>关于我</li>
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+							<li><a href="/tags">随笔</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+								<a class="github" target="_blank" href="/#" title="github">github</a>
+					        
+								<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+					        
+								<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+					        
+								<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
+					        
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						
+					</div>
+				</section>
+				
+				
+				
+
+				
+				
+				<section class="switch-part switch-part3">
+				
+					<div id="js-aboutme">我是谁，我从哪里来，我到哪里去？我就是我，是颜色不一样的吃货…</div>
+				</section>
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">luoroseyang</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="/img/touxiang.png" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">luoroseyang</h1>
+			</hgroup>
+			
+			<p class="header-subtitle">LuoRoseYang</p>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+					<li><a href="/tags">随笔</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+						<a class="github" target="_blank" href="/#" title="github">github</a>
+			        
+						<a class="weibo" target="_blank" href="/#" title="weibo">weibo</a>
+			        
+						<a class="rss" target="_blank" href="/#" title="rss">rss</a>
+			        
+						<a class="zhihu" target="_blank" href="/#" title="zhihu">zhihu</a>
+			        
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-基本知识" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/09/09/基本知识/" class="article-date">
+  	<time datetime="2015-09-08T16:12:06.000Z" itemprop="datePublished">2015-09-09</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      基本知识
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+        
+
+        <div class="clearfix"></div>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="前端开发面试知识点大纲：">前端开发面试知识点大纲：</h1><h2 id="HTML&amp;CSS：">HTML&amp;CSS：</h2><p>对Web标准的理解、浏览器内核差异、兼容性、hack、HTML5<br>CSS基本功：布局、盒子模型、选择器优先级及使用、CSS3、移动端适应 </p>
+<h2 id="JavaScript：">JavaScript：</h2><p>数据类型、面向对象、继承、闭包、插件、作用域、跨域、原型链、模块化、自定义事件、内存泄漏、事件机制、异步装载回调、模板引擎、Nodejs、JSON、ajax等。<br><a id="more"></a></p>
+<h2 id="其他：">其他：</h2><p>HTTP、安全、正则、优化、重构、响应式、移动端、团队协作、可维护、SEO、UED、架构、职业生涯<br>作为一名前端工程师，无论工作年头长短都应该必须掌握的知识点：</p>
+<p>1、DOM结构 —— 两个节点之间可能存在哪些关系以及如何在节点之间任意移动。</p>
+<p>2、DOM操作  ——如何添加、移除、移动、复制、创建和查找节点等。</p>
+<p>3、事件    —— 如何使用事件，以及IE和标准DOM事件模型之间存在的差别。</p>
+<p>4、XMLHttpRequest —— 这是什么、怎样完整地执行一次GET请求、怎样检测错误。</p>
+<p>5、严格模式与混杂模式 —— 如何触发这两种模式，区分它们有何意义。</p>
+<p>6、盒模型 —— 外边距、内边距和边框之间的关系，及IE8以下版本的浏览器中的盒模型</p>
+<p>7、块级元素与行内元素 —— 怎么用CSS控制它们、以及如何合理的使用它们</p>
+<p>8、浮动元素——怎么使用它们、它们有什么问题以及怎么解决这些问题。</p>
+<p>9、HTML与XHTML——二者有什么区别，你觉得应该使用哪一个并说出理由。</p>
+<p>10、JSON  —— 作用、用途、设计结构。</p>
+<h2 id="HTML">HTML</h2><ul>
+<li><p>Doctype作用? 严格模式与混杂模式如何区分？它们有何意义?</p>
+<blockquote>
+<p>（1）&lt;!DOCTYPE&gt; 声明位于文档中的最前面，处于 <html> 标签之前。告知浏览器的解析器，<br>用什么文档类型 规范来解析这个文档。<br>（2）严格模式的排版和 JS 运作模式是  以该浏览器支持的最高标准运行。<br>（3）在混杂模式中，页面以宽松的向后兼容的方式显示。模拟老式浏览器的行为以防止站点无法工作。<br>（4）DOCTYPE不存在或格式不正确会导致文档以混杂模式呈现。</html></p>
+</blockquote>
+</li>
+<li><p>行内元素有哪些？块级元素有哪些？</p>
+<blockquote>
+<p>（1）CSS规范规定，每个元素都有display属性，确定该元素的类型，每个元素都有默认的display值，<br>  比如div默认display属性值为“block”，成为“块级”元素；span默认display属性值为“inline”，是“行内”元素。<br>（2）行内元素有：a b span img input select strong（强调的语气）<br>块级元素有：div ul ol li dl dt dd h1 h2 h3 h4…p  </p>
+</blockquote>
+</li>
+<li><p>link 和@import 的区别是？</p>
+<blockquote>
+<p>（1）link属于XHTML标签，而@import是CSS提供的;<br>（2）页面被加载的时，link会同时被加载，而@import引用的CSS会等到页面被加载完再加载;<br>（3）import只在IE5以上才能识别，而link是XHTML标签，无兼容问题;<br>（4）link方式的样式的权重 高于@import的权重. </p>
+</blockquote>
+</li>
+</ul>
+<h2 id="常见兼容性问题？">常见兼容性问题？</h2><ul>
+<li><p>png24位的图片在iE6浏览器上出现背景，解决方案是做成PNG8.</p>
+</li>
+<li><p>浏览器默认的margin和padding不同。解决方案是加一个全局的*{margin:0;padding:0;}来统一。</p>
+</li>
+<li><p>IE6双边距bug:块属性标签float后，又有横行的margin情况下，在ie6显示margin比设置的大。 </p>
+</li>
+<li><p>浮动ie产生的双倍距离 #box{ float:left; width:10px; margin:0 0 0 10px;}<br>这种情况之下IE会产生20px的距离，解决方案是在float的标签样式控制中加入 ——_display:inline;将其转化为行内属性。</p>
+</li>
+<li><p>渐进识别的方式，从总体中逐渐排除局部。 </p>
+<figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="class">.bb</span>&#123;</span><br><span class="line"><span class="attribute">background-color</span>:<span class="hexcolor">#f1ee18</span>;<span class="comment">/*所有识别*/</span></span><br><span class="line"><span class="class">.background-color</span>:<span class="id">#00deff</span>\<span class="tag">9</span>; <span class="comment">/*IE6、7、8识别*/</span></span><br><span class="line">+<span class="attribute">background-color</span>:<span class="hexcolor">#a200ff</span>;<span class="comment">/*IE6、7识别*/</span></span><br><span class="line"><span class="attribute">_background-color</span>:<span class="hexcolor">#1e0bd1</span>;<span class="comment">/*IE6识别*/</span> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>IE下,可以使用获取常规属性的方法来获取自定义属性,<br>也可以使用getAttribute()获取自定义属性;<br>Firefox下,只能使用getAttribute()获取自定义属性.<br>解决方法:统一通过getAttribute()获取自定义属性.</p>
+</li>
+<li><p>IE下,even对象有x,y属性,但是没有pageX,pageY属性;<br>Firefox下,event对象有pageX,pageY属性,但是没有x,y属性.<br>解决方法：（条件注释）缺点是在IE浏览器下可能会增加额外的HTTP请求数。</p>
+</li>
+<li><p>Chrome 中文界面下默认会将小于 12px 的文本强制按照 12px 显示,<br>可通过加入 CSS 属性 -webkit-text-size-adjust: none; 解决.</p>
+</li>
+<li><p>超链接访问过后hover样式就不出现了 被点击访问过的超链接样式不在具有hover和active了解决方法是改变CSS属性的排列顺序:<br>L-V-H-A :  a:link {} a:visited {} a:hover {} a:active {}</p>
+</li>
+</ul>
+<h3 id="支持HTML5新标签：">支持HTML5新标签：</h3><ul>
+<li>IE8/IE7/IE6支持通过document.createElement方法产生的标签，<br>可以利用这一特性让这些浏览器支持HTML5新标签，</li>
+</ul>
+<p>浏览器支持新标签后，还需要添加标签默认的样式：</p>
+<ul>
+<li>当然最好的方式是直接使用成熟的框架、使用最多的是html5shim框架<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--[if lt IE 9]&gt; </span><br><span class="line">&lt;script&gt; src="http://html5shim.googlecode.com/svn/trunk/html5.js"&lt;/script&gt; </span><br><span class="line">&lt;![endif]--&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="iframe有那些缺点？">iframe有那些缺点？</h2><p><em>iframe会阻塞主页面的Onload事件；
+</em>iframe和主页面共享连接池，而浏览器对相同域的连接有限制，所以会影响页面的并行加载。<br>使用iframe之前需要考虑这两个缺点。如果需要使用iframe，最好是通过javascript<br>动态给iframe添加src属性值，这样可以可以绕开以上两个问题。</p>
+<h2 id="CSS">CSS</h2><ul>
+<li>介绍一下CSS的盒子模型？<br>（1）有两种， IE 盒子模型、标准 W3C 盒子模型；IE的content部分包含了 border 和 pading;<br>（2）盒模型： 内容(content)、填充(padding)、边界(margin)、 边框(border).</li>
+<li>CSS 选择符有哪些？哪些属性可以继承？优先级算法如何计算？ CSS3新增伪类有那些？</li>
+</ul>
+<blockquote>
+<p>1.id选择器（ # myid）<br>2.类选择器（.myclassname）<br>3.标签选择器（div, h1, p）<br>4.相邻选择器（h1 + p）<br>5.子选择器（ul &lt; li）<br>6.后代选择器（li a）<br>7.通配符选择器（ * ）<br>8.属性选择器（a[rel = “external”]）<br>9.伪类选择器（a: hover, li: nth - child）</p>
+</blockquote>
+<ul>
+<li><p>可继承的样式： font-size font-family color, UL LI DL DD DT;</p>
+</li>
+<li><p>不可继承的样式：border padding margin width height ;</p>
+</li>
+<li><p>优先级就近原则，同权重情况下样式定义最近者为准;</p>
+</li>
+<li><p>载入样式以最后载入的定位为准;</p>
+<blockquote>
+<p>优先级为:<br>!important &gt;  id &gt; class &gt; tag<br>important 比 内联优先级高</p>
+</blockquote>
+</li>
+</ul>
+<p>CSS3新增伪类举例：<br><figure class="highlight fsharp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">p:first-<span class="keyword">of</span>-<span class="class"><span class="keyword">type</span> 选择属于其父元素的首个 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。</span></span><br><span class="line">p:last-<span class="keyword">of</span>-<span class="class"><span class="keyword">type</span>  选择属于其父元素的最后 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。</span></span><br><span class="line">p:only-<span class="keyword">of</span>-<span class="class"><span class="keyword">type</span>  选择属于其父元素唯一的 &lt;p&gt; 元素的每个 &lt;p&gt; 元素。</span></span><br><span class="line">p:only-child    选择属于其父元素的唯一子元素的每个 &lt;p&gt; 元素。</span><br><span class="line">p:nth-child(<span class="number">2</span>)  选择属于其父元素的第二个子元素的每个 &lt;p&gt; 元素。</span><br><span class="line">:enabled  :disabled 控制表单控件的禁用状态。</span><br><span class="line">:checked        单选框或复选框被选中。</span><br></pre></td></tr></table></figure></p>
+<h2 id="CSS3有哪些新特性？">CSS3有哪些新特性？</h2><ul>
+<li>CSS3实现圆角（border-radius:8px），阴影（box-shadow:10px），对文字加特效（text-shadow、），线性渐变（gradient），旋转（transform）transform:rotate(9deg) scale(0.85,0.90) translate(0px,-30px) skew(-9deg,0deg);//旋转,缩放,定位,倾斜</li>
+</ul>
+<p>增加了更多的CSS选择器  多背景 rgba </p>
+<ul>
+<li>淘宝的样式初始化： <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">body</span>, <span class="tag">h1</span>, <span class="tag">h2</span>, <span class="tag">h3</span>, <span class="tag">h4</span>, <span class="tag">h5</span>, <span class="tag">h6</span>, <span class="tag">hr</span>, <span class="tag">p</span>, <span class="tag">blockquote</span>, <span class="tag">dl</span>, <span class="tag">dt</span>, <span class="tag">dd</span>, <span class="tag">ul</span>, <span class="tag">ol</span>, <span class="tag">li</span>, <span class="tag">pre</span>, <span class="tag">form</span>, <span class="tag">fieldset</span>, <span class="tag">legend</span>, <span class="tag">button</span>, <span class="tag">input</span>, <span class="tag">textarea</span>, <span class="tag">th</span>, <span class="tag">td</span> <span class="rules">&#123; <span class="rule"><span class="attribute">margin</span>:<span class="value"><span class="number">0</span></span></span>; <span class="rule"><span class="attribute">padding</span>:<span class="value"><span class="number">0</span></span></span>; &#125;</span></span><br><span class="line"><span class="tag">body</span>, <span class="tag">button</span>, <span class="tag">input</span>, <span class="tag">select</span>, <span class="tag">textarea</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font</span>:<span class="value"><span class="number">12px</span>/<span class="number">1.5</span>tahoma, arial, \<span class="number">5</span>b8b\<span class="number">4</span>f53</span></span>; &#125;</span></span><br><span class="line"><span class="tag">h1</span>, <span class="tag">h2</span>, <span class="tag">h3</span>, <span class="tag">h4</span>, <span class="tag">h5</span>, <span class="tag">h6</span><span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"><span class="number">100%</span></span></span>; &#125;</span></span><br><span class="line"><span class="tag">address</span>, <span class="tag">cite</span>, <span class="tag">dfn</span>, <span class="tag">em</span>, <span class="tag">var</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-style</span>:<span class="value">normal</span></span>; &#125;</span></span><br><span class="line"><span class="tag">code</span>, <span class="tag">kbd</span>, <span class="tag">pre</span>, <span class="tag">samp</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-family</span>:<span class="value">couriernew, courier, monospace</span></span>; &#125;</span></span><br><span class="line"><span class="tag">small</span><span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"><span class="number">12px</span></span></span>; &#125;</span></span><br><span class="line"><span class="tag">ul</span>, <span class="tag">ol</span> <span class="rules">&#123; <span class="rule"><span class="attribute">list-style</span>:<span class="value">none</span></span>; &#125;</span></span><br><span class="line"><span class="tag">a</span> <span class="rules">&#123; <span class="rule"><span class="attribute">text-decoration</span>:<span class="value">none</span></span>; &#125;</span></span><br><span class="line"><span class="rule"><span class="attribute">a</span>:<span class="value">hover &#123; text-decoration:underline</span></span>; &#125;</span><br><span class="line"><span class="tag">sup</span> <span class="rules">&#123; <span class="rule"><span class="attribute">vertical-align</span>:<span class="value">text-top</span></span>; &#125;</span></span><br><span class="line"><span class="tag">sub</span><span class="rules">&#123; <span class="rule"><span class="attribute">vertical-align</span>:<span class="value">text-bottom</span></span>; &#125;</span></span><br><span class="line"><span class="tag">legend</span> <span class="rules">&#123; <span class="rule"><span class="attribute">color</span>:<span class="value"><span class="hexcolor">#000</span></span></span>; &#125;</span></span><br><span class="line"><span class="tag">fieldset</span>, <span class="tag">img</span> <span class="rules">&#123; <span class="rule"><span class="attribute">border</span>:<span class="value"><span class="number">0</span></span></span>; &#125;</span></span><br><span class="line"><span class="tag">button</span>, <span class="tag">input</span>, <span class="tag">select</span>, <span class="tag">textarea</span> <span class="rules">&#123; <span class="rule"><span class="attribute">font-size</span>:<span class="value"><span class="number">100%</span></span></span>; &#125;</span></span><br><span class="line"><span class="tag">table</span> <span class="rules">&#123; <span class="rule"><span class="attribute">border-collapse</span>:<span class="value">collapse</span></span>; <span class="rule"><span class="attribute">border-spacing</span>:<span class="value"><span class="number">0</span></span></span>; &#125;</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="JavaScript">JavaScript</h2><ul>
+<li>写一个通用的事件侦听器函数。<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// event(事件)工具集</span></span><br><span class="line">markyun.Event = &#123;</span><br><span class="line">	<span class="comment">// 页面加载完成后</span></span><br><span class="line">	readyEvent : <span class="function"><span class="keyword">function</span>(<span class="params">fn</span>) </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (fn==<span class="literal">null</span>) &#123;</span><br><span class="line">			fn=<span class="built_in">document</span>;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">var</span> oldonload = <span class="built_in">window</span>.onload;</span><br><span class="line">		<span class="keyword">if</span> (<span class="keyword">typeof</span> <span class="built_in">window</span>.onload != <span class="string">'function'</span>) &#123;</span><br><span class="line">			<span class="built_in">window</span>.onload = fn;</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			<span class="built_in">window</span>.onload = <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">			    oldonload();</span><br><span class="line">			    fn();</span><br><span class="line">			&#125;;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;,</span><br><span class="line">	<span class="comment">// 参数： 操作的元素,事件名称 ,事件处理程序</span></span><br><span class="line">	addEvent : <span class="function"><span class="keyword">function</span>(<span class="params">element, type, handler</span>) </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (element.addEventListener) &#123;</span><br><span class="line">			<span class="comment">//事件类型、需要执行的函数、是否捕捉</span></span><br><span class="line">			element.addEventListener(type, handler, <span class="literal">false</span>);</span><br><span class="line">		&#125; <span class="keyword">else</span> <span class="keyword">if</span> (element.attachEvent) &#123;</span><br><span class="line">			element.attachEvent(<span class="string">'on'</span> + type, <span class="function"><span class="keyword">function</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">		    	handler.call(element);</span><br><span class="line">			&#125;);</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			element[<span class="string">'on'</span> + type] = handler;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;,</span><br><span class="line">	<span class="comment">// 移除事件</span></span><br><span class="line">	removeEvent : <span class="function"><span class="keyword">function</span>(<span class="params">element, type, handler</span>) </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (element.removeEnentListener) &#123;</span><br><span class="line">			element.removeEnentListener(type, handler, <span class="literal">false</span>);</span><br><span class="line">		&#125; <span class="keyword">else</span> <span class="keyword">if</span> (element.datachEvent) &#123;</span><br><span class="line">			element.detachEvent(<span class="string">'on'</span> + type, handler);</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			element[<span class="string">'on'</span> + type] = <span class="literal">null</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;, </span><br><span class="line">	<span class="comment">// 阻止事件 (主要是事件冒泡，因为IE不支持事件捕获)</span></span><br><span class="line">	stopPropagation : <span class="function"><span class="keyword">function</span>(<span class="params">ev</span>) </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (ev.stopPropagation) &#123;</span><br><span class="line">			ev.stopPropagation();</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			ev.cancelBubble = <span class="literal">true</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;,</span><br><span class="line">	<span class="comment">// 取消事件的默认行为</span></span><br><span class="line">	preventDefault : <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (event.preventDefault) &#123;</span><br><span class="line">			event.preventDefault();</span><br><span class="line">		&#125; <span class="keyword">else</span> &#123;</span><br><span class="line">			event.returnValue = <span class="literal">false</span>;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;,</span><br><span class="line">	<span class="comment">// 获取事件目标</span></span><br><span class="line">	getTarget : <span class="function"><span class="keyword">function</span>(<span class="params">event</span>) </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> event.target || event.srcElement;</span><br><span class="line">	&#125;,</span><br><span class="line">	<span class="comment">// 获取event对象的引用，取到事件的所有信息，确保随时能使用event；</span></span><br><span class="line">	getEvent : <span class="function"><span class="keyword">function</span>(<span class="params">e</span>) </span>&#123;</span><br><span class="line">		<span class="keyword">var</span> ev = e || <span class="built_in">window</span>.event;</span><br><span class="line">		<span class="keyword">if</span> (!ev) &#123;</span><br><span class="line">			<span class="keyword">var</span> c = <span class="keyword">this</span>.getEvent.caller;</span><br><span class="line">			<span class="keyword">while</span> (c) &#123;</span><br><span class="line">		    	ev = c.arguments[<span class="number">0</span>];</span><br><span class="line">		    	<span class="keyword">if</span> (ev &amp;&amp; Event == ev.constructor) &#123;</span><br><span class="line">		        	<span class="keyword">break</span>;</span><br><span class="line">		    	&#125;</span><br><span class="line">		    	c = c.caller;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> ev;</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>new操作符具体干了什么呢?<br>1、创建一个空对象，并且 this 变量引用该对象，同时还继承了该函数的原型。<br>2、属性和方法被加入到 this 引用的对象中。<br>3、新创建的对象由 this 所引用，并且最后隐式的返回 this 。</p>
+<p>如何解决跨域问题?<br>jsonp、 iframe、window.name、window.postMessage、服务器上设置代理页面</p>
+<h2 id="针对_jQuery_的优化方法？">针对 jQuery 的优化方法？</h2><ul>
+<li><p>基于Class的选择性的性能相对于Id选择器开销很大，因为需遍历所有DOM元素。</p>
+</li>
+<li><p>频繁操作的DOM，先缓存起来再操作。用Jquery的链式调用更好。<br>比如：var str=$(“a”).attr(“href”);</p>
+</li>
+<li><p>for (var i = size; i &lt; arr.length; i++) {}<br>for 循环每一次循环都查找了数组 (arr) 的.length 属性，在开始循环的时候设置一个变量来存储这个数字，可以让循环跑得更快：<br>for (var i = size, length = arr.length; i &lt; length; i++) {}</p>
+</li>
+</ul>
+<h2 id="JavaScript中的作用域与变量声明提升？">JavaScript中的作用域与变量声明提升？</h2><h2 id="如何编写高性能的Javascript？">如何编写高性能的Javascript？</h2><h2 id="那些操作会造成内存泄漏？">那些操作会造成内存泄漏？</h2><p>内存泄漏指任何对象在您不再拥有或需要它之后仍然存在。<br>垃圾回收器定期扫描对象，并计算引用了每个对象的其他对象的数量。如果一个对象的引用数量为 0（没有其他对象引用过该对象），或对该对象的惟一引用是循环的，那么该对象的内存即可回收。</p>
+<h2 id="你遇到过比较难的技术问题是？你是如何解决的？">你遇到过比较难的技术问题是？你是如何解决的？</h2><h2 id="页面重构怎么操作？">页面重构怎么操作？</h2><h2 id="列举IE_与其他浏览器不一样的特性？">列举IE 与其他浏览器不一样的特性？</h2><h2 id="什么叫优雅降级和渐进增强？">什么叫优雅降级和渐进增强？</h2><h2 id="对Node的优点和缺点提出了自己的看法？">对Node的优点和缺点提出了自己的看法？</h2><ul>
+<li><p>（优点）因为Node是基于事件驱动和无阻塞的，所以非常适合处理并发请求，<br>因此构建在Node上的代理服务器相比其他技术实现（如Ruby）的服务器表现要好得多。<br>此外，与Node代理服务器交互的客户端代码是由javascript语言编写的，<br>因此客户端和服务器端都用同一种语言编写，这是非常美妙的事情。</p>
+</li>
+<li><p>（缺点）Node是一个相对新的开源项目，所以不太稳定，它总是一直在变，<br>而且缺少足够多的第三方库支持。看起来，就像是Ruby/Rails当年的样子。</p>
+</li>
+</ul>
+<h2 id="你有哪些性能优化的方法？">你有哪些性能优化的方法？</h2><p>（1） 减少http请求次数：CSS Sprites, JS、CSS源码压缩、图片大小控制合适；网页Gzip，CDN托管，data缓存 ，图片服务器。</p>
+<p>（2） 前端模板 JS+数据，减少由于HTML标签导致的带宽浪费，前端用变量保存AJAX请求结果，每次操作本地变量，不用请求，减少请求次数</p>
+<p>（3） 用innerHTML代替DOM操作，减少DOM操作次数，优化javascript性能。</p>
+<p>（4） 当需要设置的样式很多时设置className而不是直接操作style。</p>
+<p>（5） 少用全局变量、缓存DOM节点查找的结果。减少IO读取操作。</p>
+<p>（6） 避免使用CSS Expression（css表达式)又称Dynamic properties(动态属性)。</p>
+<p>（7） 图片预加载，将样式表放在顶部，将脚本放在底部  加上时间戳。</p>
+<p>（8） 避免在页面的主体布局中使用table，table要等其中的内容完全下载之后才会显示出来，显示比div+css布局慢。</p>
+<h2 id="http状态码有那些？分别代表是什么意思？">http状态码有那些？分别代表是什么意思？</h2><p>100-199 用于指定客户端应相应的某些动作。<br>200-299 用于表示请求成功。<br>300-399 用于已经移动的文件并且常被包含在定位头信息中指定新的地址信息。<br>400-499 用于指出客户端的错误。400    1、语义有误，当前请求无法被服务器理解。401   当前请求需要用户验证 403  服务器已经理解请求，但是拒绝执行它。<br>500-599 用于支持服务器错误。 503 – 服务不可用</p>
+<h2 id="一个页面从输入_URL_到页面加载显示完成，这个过程中都发生了什么？（流程说的越详细越好）">一个页面从输入 URL 到页面加载显示完成，这个过程中都发生了什么？（流程说的越详细越好）</h2><p>查找浏览器缓存<br>DNS解析、查找该域名对应的IP地址、重定向（301）、发出第二个GET请求<br>进行HTTP协议会话<br>客户端发送报头(请求报头)<br>服务器回馈报头(响应报头)<br>html文档开始下载<br>文档树建立，根据标记请求所需指定MIME类型的文件<br>文件显示</p>
+<h2 id="浏览器这边做的工作大致分为以下几步：">浏览器这边做的工作大致分为以下几步：</h2><ul>
+<li>加载：根据请求的URL进行域名解析，向服务器发起请求，接收文件（HTML、JS、CSS、图象等）。</li>
+<li>解析：对加载到的资源（HTML、JS、CSS等）进行语法解析，建议相应的内部数据结构（比如HTML的DOM树，JS的（对象）属性表，CSS的样式规则等等）<br>}</li>
+</ul>
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2015/09/09/DNS解析/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><</strong>
+      <div class="article-nav-title">
+        
+          DNS解析
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="基本知识" data-title="基本知识" data-url="http://yoursite.com/2015/09/09/基本知识/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+    	<div class="footer-left">
+    		&copy; 2015 luoroseyang
+    	</div>
+      	<div class="footer-right">
+      		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
+      	</div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css" type="text/css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="http://7.url.cn/edu/jslib/comb/require-2.1.6,jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="/js/main.js" type="text/javascript"></script>
+
+
+
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
+  </div>
+</body>
+</html>
