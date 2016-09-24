@@ -1,23 +1,90 @@
 .slide
 {
-    font-family: 'Open Sans', Arial, sans-serif;
-    font-size: 30px;
-    line-height: 36px;
+
 
     display: block;
 
-    width: 900px;
-    height: 700px;
+    width: 1000px;
+    height: 750px;
     padding: 40px 60px;
 
-    letter-spacing: -1px;
 
-    color: rgb(102, 102, 102);
     border: 1px solid rgba(0, 0, 0, .3);
-    border-radius: 10px;
+    border-radius: 20px;
+    background-size: 1000px 750px;
     background-color: white;
+    background-repeat: no-repeat;
     box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
     text-shadow: 0 2px 2px rgba(0, 0, 0, .1);
+}
+
+.slide_2 {
+    background-image: url(http://s18.mogucdn.com/p2/160924/upload_6a2996h84g825icifeg0b50degf0b_720x540.jpg);
+}
+.slide_3 {
+    background-image: url(http://s18.mogucdn.com/p2/160924/upload_3heil66k8f7il8ajbbeh90l723ded_720x540.jpg);
+}
+.slide_4 {
+    background-image: url(http://s16.mogucdn.com/p2/160924/upload_31i0kb75i45lcffdgb5eca6lggec9_720x540.jpg);
+}
+.slide_5 {
+    background-image: url(http://s16.mogucdn.com/p2/160924/upload_737ij63k6335h5k3d2bg4j0ldfc70_720x540.jpg);
+}
+.slide_6 {
+    background-image: url(http://s16.mogucdn.com/p2/160924/upload_8fejg1ga91k6bjid75ce2gikf8fd4_720x540.jpg);
+}
+.slide_7 {
+    background-image: url(http://s16.mogucdn.com/p2/160924/upload_4ekbbfh83a1b2cjdea60c2l2hg283_720x540.jpg);
+}
+.slide_8 {
+    background-image: url(http://s16.mogucdn.com/p2/160924/upload_0ba4heb342a6c9i04cd6gaekg5akh_720x540.jpg);
+}
+.slide_9 {
+    background-image: url(http://s17.mogucdn.com/p2/160924/upload_7e29751l00bid5bj1j75fag3h7d80_720x540.jpg);
+}
+.slide_10 {
+    background-image: url(http://s18.mogucdn.com/p2/160924/upload_7b4f2703bk5ilegf39727l33646j9_720x540.jpg);
+}
+.slide_11{
+    background-image: url(http://s18.mogucdn.com/p2/160924/upload_5blcic1chdcg4ffgah07425il382a_720x540.jpg);
+}
+.slide_12 {
+    background-image: url(http://s16.mogucdn.com/p2/160924/upload_3gakj35689g2l4fb60a2gjf2kbd0g_720x540.jpg);
+}
+.slide_13 {
+    background-image: url(http://s18.mogucdn.com/p2/160924/upload_70cd0egfj1i5ba32313ihfji4li5j_720x540.jpg);
+}
+.slide_14 {
+    background-image: url(http://s17.mogucdn.com/p2/160924/upload_524lk4ae45ablijf2j6216533cjk3_720x540.jpg);
+}
+
+.slide_15 {
+    background-image: url(http://s17.mogucdn.com/p2/160924/upload_024g8kc6lkh390h5g6hchd04e9k7h_720x540.jpg);
+}
+
+.slide_16 {
+    background-image: url(http://s18.mogucdn.com/p2/160924/upload_0549j1klif2j1gdej195fedll861f_720x540.jpg);
+}
+
+.slide_17 {
+    background-image: url(http://s16.mogucdn.com/p2/160924/upload_52kadda02kghhl6jk0635g1j60e2d_720x540.jpg);
+}
+.slide_18 {
+    background-image: url(http://s17.mogucdn.com/p2/160924/upload_071ck84fc5172i5ibegh9l95fk15h_720x540.jpg);
+}
+.slide_19 {
+    background-image: url(http://s18.mogucdn.com/p2/160924/upload_0hb3dfe1c4cd05c1j81ehjf3l09ee_720x540.jpg);
+}
+
+.head_page{
+
+    width: 600px;
+    height: 450px;
+    padding: 40px 60px;
+    border-radius: 20px;
+    background-image: url(http://s16.mogucdn.com/p2/160924/upload_87cdh142cbc3h26j04gd2jd8ijgik_720x540.jpg);
+    background-repeat: no-repeat;
+    background-size: 600px 450px;
 }
 
 .slide p
@@ -28,70 +95,29 @@
     display: block;
 
     padding: 5px;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style:    preserve-3d; /* Y U need this Firefox?! */
+    -ms-transform-style:     preserve-3d;
+    -o-transform-style:      preserve-3d;
+    transform-style:         preserve-3d;
+
+
+    -webkit-transition: 3s;
+    -moz-transition:    3s;
+    -ms-transition:     3s;
+    -o-transition:      3s;
+    transition:         3s;
+
+    // -webkit-transform: translateX(140px);
+    // -moz-transform:    translateX(140px);
+    // -ms-transform:     translateX(140px);
+    // -o-transform:      translateX(140px);
+    //  transform:        translateX(140px);
+
+}
+.slide .name {
+    font-size: 100px;
+    line-height: 100px;
 }
 
-.left
-{
-    float: left;
 
-    width: 350px;
-    padding-right: 30px;
-}
-.right
-{
-    line-height: 618px;
-
-    display: inline-block;
-    float: left;
-
-    width: 390px;
-}
-.right img
-{
-    width: 390px;
-
-    vertical-align: middle;
-}
-.xiaochuan p
-{
-    font-size: 30px;
-    line-height: 42px;
-}
-
-#xiaochuan_3 p
-{
-    font-size: 28px;
-    line-height: 40px;
-}
-
-#huixin_1 p
-{
-    font-size: 25px;
-    line-height: 30px;
-
-    padding: 3px;
-}
-
-table
-{
-    width: 100%;
-}
-table td
-{
-    padding: 10px;
-
-    border: solid 1px #000;
-}
-#huixin_2 table thead tr td:first-child
-{
-    width: 25%;
-}
-#huixin_3 table thead tr td:first-child
-{
-    width: 20%;
-}
-
-.horizontal
-{
-    text-align: center;
-}
