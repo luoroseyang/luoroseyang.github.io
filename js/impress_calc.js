@@ -8,7 +8,7 @@ window.gogo = function(){
 		return slide;
 	}
 
-	var r = 5000;
+	var r = 5500;
 	var n = 18;
 	var impressDom = document.getElementById("impress");
 	var data = {
@@ -25,13 +25,12 @@ window.gogo = function(){
 		var data = {
 			"id": "step" + i,
 			"class": "step slide slide_" + (i + 2 ),
-			"data-rotate-y": i * 360/n,
-			"data-rotate-x": i * 10,
+			"data-rotate-y": 30,
+			"data-rotate-x": 40,
 			"data-x": p_x,
 			"data-y": p_y,
 			"data-scale": 1,
-			"data-rotate": i * 200 / n,
-			"data-transition-duration": 5000
+			"data-rotate": (n-i) * 300 / n
 		}
 		impressDom.appendChild(Cslide(data));
 	}
